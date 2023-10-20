@@ -79,6 +79,7 @@ if(client != undefined){
         console.log("message received:" + message.toString())
         var obj = JSON.parse(message);
         
+        console.log("signal: " + obj.signal);
         console.log(obj.time);
         console.log(Date.now()/1000);
         console.log(obj.time - Date.now()/1000);
